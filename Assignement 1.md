@@ -509,7 +509,6 @@ Bien entendu, pour pouvoir utiliser `zip()`, il faut que les listes soient de mÃ
 
 1. [Argmax](ex4.1)
 
-'''
    l=[2,5,8,120,14,3,12,16,14,12,20,1]
 mois=["Jan","Fev","Mar","Avr","Mai","Juin","Juillet","Aout","Sep","Oct","Nov","Dec"]
 def argmax(l):
@@ -522,8 +521,18 @@ def argmax(l):
    
 v,k=argmax(l)
 print("Max vente :", v, "------->", mois[k])
-'''
 
-   
 3. [Intersection de listes](ex4.2)
-4. [Union de listes](ex4.3)
+   # Ex2
+l1=[2,5,8,12,14,3]
+l2=[3,1,-1]
+
+
+def intersection(l1,l2):
+  l3=list()
+  for e in l1:
+    if e in l2:
+        l3.append(e)
+  return l3
+print(intersection(l1,l2))
+5. [Union de listes](ex4.3)
